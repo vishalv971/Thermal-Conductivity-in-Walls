@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/global.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div id="overlay">
+    <nav class="red darken-2">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo" style="padding-left: 45%;">DENSO-Hack</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <center>
+            <h2>Rate of Thermal Conduction of Walls/Windows</h2>
+            <br>
+        </center>
+
+        <table class="striped centered" style="background: rgba(255,255,255,1.0);">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Type of material</td>
+                    <td>
+                        <%= k %>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Area of measurement (meters square)</td>
+                    <td>
+                        <%= a %>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Temperature Difference (Kelvin)</td>
+                    <td>
+                        <%= tDiff %>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Thickness of object (meters)</td>
+                    <td>
+                        <%= d %>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Rate of Thermal Conduction (watts)</td>
+                    <td>
+                        <%= lambda %>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>R-Value (kelvin square meters per watt)</td>
+                    <td>
+                        <%= r %>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <div class="row">
+            <div class="col s8 offset-s2">
+                <div class="card red darken-2 white-text">
+                    <br>
+                    <center>
+                        <h3 class="white-text">Inferences from above values:</h3>
+                        <% if(r > 100) { %>
+                            <p>The calculated R-Value is quite high and therefore, indicates a good insulation quality.</p>
+
+                            <% } else { %>
+                                <h5 class="white-text">The calculated R-Value indicates that the material of the wall/window has undergone wear and tear. Please tend to it.</h5>
+                                <% } %>
+                    </center>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+    <script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+
+</html>
