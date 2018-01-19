@@ -34,5 +34,7 @@ This repo contains the codebase of the project done at Deno-Shaping the Future H
 --------------------------------------------------------------------------------
 
 ### Screenshots
-<p align="center"><img width="80%" src="/Screenshots/Capture1.PNG" /></p><br>
+<p align="center"><img width="80%" src="/Screenshots/Capture1.PNG" /></p>
+
+--------------------------------------------------------------------------------
 <p align="center"><img width="80%" src="/Screenshots/Capture2.PNG" /></p>
