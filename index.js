@@ -1,4 +1,4 @@
-/* eslint-disable node/no-missing-require */
+
 
 /**
  * This is a small example app to turn off and on
