@@ -3,7 +3,7 @@
 --------------------------------------------------------------------------------
 
 ### Introduction
-This repo contains the codebase of the project done at Deno-Shaping the Future Hackathon.
+This repo contains the codebase of the project done at Deno-Shaping the Future Hackathon. We implemented a project using the "Energy Eye" Denso Heat Sensor.
 
 --------------------------------------------------------------------------------
 
