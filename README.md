@@ -1,4 +1,3 @@
-<p align="center"><img width="40%" src="https://www.denso.com/global/en/og_image1.png" /></p>
 
 --------------------------------------------------------------------------------
 
